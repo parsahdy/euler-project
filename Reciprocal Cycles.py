@@ -1,11 +1,8 @@
-from decimal import *
-getcontext().prec = 1000
-
 
 def recurring_cycle():
     d = 1000
     max_cycle_length = 0
-    i_for_cycle = False
+    i_for_cycle = 0
     for i in range(1, d):
         current_cycle = find_cycle_length(i)
         if current_cycle > max_cycle_length:
